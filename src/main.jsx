@@ -1,37 +1,37 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.jsx'
-import LoginPage from './components/LoginPage.jsx'
 import LandingPage from './components/LandingPage.jsx'
-import SignupPage from './components/SignupPage.jsx'
+import LoginPage from './components/LoginPage.jsx'
 import Profile from './components/Profile.jsx'
+import SignupPage from './components/SignupPage.jsx'
+import './index.css'
 
 const router = createBrowserRouter([
   {
-    path: '/PopX-Frontend/',
+    path: '/',
     element: <App />,
     children: [
       {
         path: "",
-        element: <> 
-        <LandingPage/>
+        element: <>
+          <LandingPage />
         </>
       },
     ]
   },
   {
-    path: "/PopX-Frontend/LoginPage",
-    element: <><LoginPage/> </>
+    path: "/LoginPage",
+    element: <><LoginPage /> </>
   },
   {
-    path: "/PopX-Frontend/SignupPage",
-    element: <><SignupPage/> </>
+    path: "/SignupPage",
+    element: <><SignupPage /> </>
   },
   {
-    path: "/PopX-Frontend/Profile",
-    element: <><Profile/> </>
+    path: "/Profile",
+    element: <><Profile /> </>
   },
 
 

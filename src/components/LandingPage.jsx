@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 const LandingPage = () => {
@@ -12,13 +11,13 @@ const LandingPage = () => {
           <h1 className='text-3xl font-semibold'>Welcome to PopX</h1>
           <h3 className='text-base text-neutral-400 font-medium'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores harum aliquid</h3>
           <div className='flex gap-2 flex-col my-5'>
-            <Link to={'/PopX-Frontend/SignupPage'}>
-            
-            <button className='w-full py-2 font-semibold cursor-pointer rounded-lg text-white bg-[#6c25ff]'>Create Account</button>
+            <Link to={'/SignupPage'}>
+
+              <button className='w-full py-2 font-semibold cursor-pointer rounded-lg text-white bg-[#6c25ff]'>Create Account</button>
             </Link>
-            <Link to={'/PopX-Frontend/LoginPage'}>
-            
-            <button className='w-full py-2 font-semibold cursor-pointer rounded-lg bg-[#cdb9fa]'>Already Registerd? Login</button>
+            <Link to={'/LoginPage'}>
+
+              <button className='w-full py-2 font-semibold cursor-pointer rounded-lg bg-[#cdb9fa]'>Already Registerd? Login</button>
             </Link>
           </div>
         </section>

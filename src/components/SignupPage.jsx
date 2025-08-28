@@ -28,7 +28,7 @@ const SignupPage = () => {
         }
 
         setError(""); // clear error if valid
-        navigate("/PopX-Frontend/Profile");
+        navigate("/Profile");
     };
 
     return (

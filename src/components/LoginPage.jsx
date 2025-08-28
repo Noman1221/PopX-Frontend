@@ -15,7 +15,7 @@ const LoginPage = () => {
         }
 
         // If both fields are filled, navigate to Profile page
-        navigate("/PopX-Frontend/Profile");
+        navigate("/Profile");
     }
 
     return (
